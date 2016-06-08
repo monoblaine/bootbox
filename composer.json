@@ -18,5 +18,6 @@
         "bootbox.js"
       ]
     }
-  }
+  },
+  "version": "4.4.0-m1"
 }
