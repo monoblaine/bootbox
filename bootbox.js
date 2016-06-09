@@ -318,7 +318,7 @@
   exports.inform = function(message, options) {
     return exports.alert($.extend({}, options, {
       message: message,
-      title: '<span class="icon-info-circled">Bilgi</span>',
+      title: "<span class='icon-info-circled'>Bilgi</span>",
       className: "modal-info"
     }));
   };
@@ -326,7 +326,7 @@
   exports.warn = function(message, options) {
     return exports.alert($.extend({}, options, {
       message: message,
-      title: '<span class="icon-attention">Uyarı</span>',
+      title: "<span class='icon-attention'>Uyarı</span>",
       className: "modal-warning"
     }));
   };
@@ -334,7 +334,7 @@
   exports.showError = function(message, options) {
     return exports.alert($.extend({}, options, {
       message: message,
-      title: '<span class="icon-attention-circled">Hata</span>',
+      title: "<span class='icon-attention-circled'>Hata</span>",
       className: "modal-danger"
     }));
   };
