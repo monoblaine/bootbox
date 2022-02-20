@@ -1,5 +1,5 @@
 {
-  "name": "bootbox",
+  "name": "@abt/bootbox",
   "version": "4.4.0-m2",
   "description": "Wrappers for JavaScript alert(), confirm() and other flexible dialogs using the Bootstrap framework",
   "directories": {
