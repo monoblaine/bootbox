@@ -1,4 +1,6 @@
 // ş
+@use 'sass:math';
+
 .modal-danger,
 .modal-warning,
 .modal-info {
@@ -13,7 +15,7 @@
 
   .modal-footer {
     margin-top: 0;
-    padding: ceil($modal-inner-padding / 2);
+    padding: ceil(math.div($modal-inner-padding / 2));
   }
 }
 
