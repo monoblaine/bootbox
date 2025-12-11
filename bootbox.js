@@ -586,7 +586,7 @@
     });
 
     if (shouldShow === true) {
-      dialog.modal("show");
+      showDialog(dialog);
     }
 
     return dialog;
@@ -765,7 +765,7 @@
     });
 
     if (options.show) {
-      dialog.modal("show");
+      showDialog(dialog);
     }
 
     // @TODO should we return the raw element here or should
@@ -1009,6 +1009,10 @@
   exports.init = function(_$) {
     return init(_$ || $);
   };
+
+  function showDialog (dialog) {
+    dialog.modal("show");
+  }
 
   return exports;
 }));
