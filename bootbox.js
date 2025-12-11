@@ -1011,6 +1011,12 @@
   };
 
   function showDialog (dialog) {
+    var activeEl = document.activeElement;
+    if (activeEl != null) {
+      dialog.one('hidden.bs.modal', function () {
+        activeEl.focus();
+      });
+    }
     dialog.modal("show");
   }
 
