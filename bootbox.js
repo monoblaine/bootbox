@@ -1012,7 +1012,7 @@
 
   function showDialog (dialog) {
     var activeEl = document.activeElement;
-    if (activeEl != null) {
+    if (activeEl != null && activeEl !== document.body) {
       dialog.one('hidden.bs.modal', function () {
         activeEl.focus();
       });
